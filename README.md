@@ -44,7 +44,7 @@ Contact page – will show all the ways in which customers can contact the compa
 
 Services page – this page will have detailed descriptions of the services that the team offers. It will also have before and after photos to demonstrate the company’s work quality.  
 
-FAQ’s section- this will answer all the common questions asked by customers. 
+Enquiry page- this will allow the users to leave enquiries on the website which they will then recieve answers via their email. 
 
 # Timeline and Milestones: (6-8weeks) 
 
