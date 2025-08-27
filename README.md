@@ -2,6 +2,8 @@
 # Awongiwe Mayisela
 # St10478718
 
+https://github.com/ST10478718/JOJO-Electronics 
+
 # Overview: 
 
 JOJO electronics is a locally owned company dedicated to providing safe, reliable and high-quality electrical solutions to their clients. Established in 2000, the company has built a strong reputation for their professionalism and response time. The company consists of a team of qualified and licensed electricians who bring experience to electrical repairs, maintenance and emergency services.
