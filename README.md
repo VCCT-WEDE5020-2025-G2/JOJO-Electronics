@@ -2,11 +2,31 @@
 # Awongiwe Mayisela
 # St10478718
 
-JOJO Electronics’ website purpose is to be a digital tool that will attract new customers, build trust and support the growth of the business. 
+# Overview: 
+
+JOJO electronics is a locally owned company dedicated to providing safe, reliable and high-quality electrical solutions to their clients. Established in 2000, the company has built a strong reputation for their professionalism and response time. The company consists of a team of qualified and licensed electricians who bring experience to electrical repairs, maintenance and emergency services.
+
+The company's mission is to deliver reliable and high-quality solutions and services which will exceed the clients' expectations while upholding the highest standards of professionalism and customer service.  
+
+The company’s vision is to be the most trusted electrical service provider in the region, which can be recognized for innovation and unwavering commitment to safety and customer satisfaction.  
+
+Target Audience:  
+
+Homeowners - those that are in need of repairs, installations or even upgrades.  
+
+Small and medium businesses - which require electrical Maintenace or even new installations.  
+
+Property managers - are looking for reliable services for their multiple units.  
+
+Construction companies - wanting experienced electrical subcontractors.  
+
+Emergency services clients - that need fast response for their electrical issues.  
 
 # Website Goals and Objectives: 
 
 # Goals: 
+
+JOJO Electronics’ website purpose is to be a digital tool that will attract new customers, build trust and support the growth of the business. 
 
 The goals include generating quality leads, showcase services and expertise, to help sell the company services, increase the brands visibility, provide easy contact options and educate the customer. 
 
@@ -77,10 +97,13 @@ Week 7: Official Launch
 <img width="1394" height="854" alt="image" src="https://github.com/user-attachments/assets/b0c2aa25-9a53-4ecb-811d-386436ba90b0" />
 <img width="2632" height="1900" alt="image" src="https://github.com/user-attachments/assets/e5a3a351-8e6a-476f-abf1-1c78bce8ff5a" />
 
+# Changelog:
+
+
+
  # Reference:  
 
 Research images 
-
 
 Available at:  
 
