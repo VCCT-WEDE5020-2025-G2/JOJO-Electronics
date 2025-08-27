@@ -99,6 +99,13 @@ Week 7: Official Launch
 
 # Changelog:
 
+<img width="1366" height="720" alt="image" src="https://github.com/user-attachments/assets/2d266e01-279c-4bbe-a84f-cfe49c3fc0cf" />
+<img width="1366" height="720" alt="image" src="https://github.com/user-attachments/assets/a695a979-a14d-4137-a944-d38a3befb80e" />
+<img width="1366" height="720" alt="image" src="https://github.com/user-attachments/assets/cf422299-448e-4d85-b8fc-efc80990bb73" />
+<img width="1366" height="720" alt="image" src="https://github.com/user-attachments/assets/df9eefe2-ae27-4839-a970-4e78671c0e3a" />
+
+
+
 
 
  # Reference:  
