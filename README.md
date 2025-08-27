@@ -124,6 +124,10 @@ Available at:
 
 [Accessed 24 August 2025] 
 
+< https://www.pexels.com/photo/solar-technicians-installing-solar-panels-6961088/ > 
+
+[Accessed 25 August 2025] 
+
 
 
 
