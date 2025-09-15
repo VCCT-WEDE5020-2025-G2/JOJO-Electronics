@@ -38,6 +38,7 @@
      </div>
      <!--The companies team members -->
         <br></br>
+        <div class="ticker-wrap">
      <div class="review-ticker">
         <span>"JOJO Electronics provided excellent service and fixed my electrical issues quickly!" - Sarah K.</span>
                 <span>"Highly recommend JOJO Electronics for their professionalism and expertise." - Mike D.</span>
@@ -46,10 +47,15 @@
                 <span>"Great experience from start to finish. Will use JOJO Electronics again!" - Emily R.</span>
         <span>"The electricians were knowledgeable and courteous. Highly recommend!" - James P.</span>
      </div>
+        </div>
 
 <!--the review-ticker is to show the reviews from previous clients to help build trust with potential clients-->
 
-
+    <section class="footer">
+    <footer>
+        <p>&copy; 2024 JOJO Electronics. All rights reserved.</p>
+    </footer>
+</section>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,6 +67,74 @@
         .Hero-image {
             background-image: url('C:\JOJO Electronics\images\vecteezy_electrical-engineering-man_9346439.jpg');
            }
+
+             nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            margin-bottom: 20px;
+        }
+        .Hero-image {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            margin-bottom: 20px;
+        }
+               .ticker-wrap {
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            overflow: hidden;
+            height: 40px;
+            display: flex;
+            align-items: center;
+        }  
+        .review-ticker {
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .ticker {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            animation: ticker 20s linear infinite;
+        }
+        .ticker span {
+            display: inline-block;
+            padding: 0 2em;
+            font-size: 16px;
+        }
+          @keyframes ticker {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
               </style>
 </body>
 </html>
