@@ -46,7 +46,7 @@
             <label for ="number">Phone Number:</label>
             <input type="tel" id="number" name="number" required><br><br>
             <label for ="service">Service Required:</label>
-            <dropdown id="service" name="service" required>
+            <select id="service" name="service" required>
                 <option>Electrical wiring and rewiring</option>
                 <option>Installation and maintenance of electrical systems in offices, shops and buildings </option>
                 <option>Security systems wiring </option>
@@ -60,7 +60,7 @@
                 <option>Installation of heavy machinery and equipment </option>
                 <option>Electrical panel upgrades </option>
                 <option>Emergency power systems </option>
-            </dropdown><br><br>
+            </select><br><br>
 
               <button type="Total">Total</button>
 <!--This button will calculate the total cost of the service required-->
@@ -86,6 +86,12 @@
         header h1 {
             text-align: center;
         } 
+        select{
+            width:100%;
+            padding:10px;
+            font-size:16px;
+            border-radius:4px;
+        }
     </style>
 </body>
 </html>
