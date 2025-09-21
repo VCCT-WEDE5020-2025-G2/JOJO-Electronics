@@ -7,7 +7,7 @@
         }
      
         .Hero-image {
-            background-image:url('C:images/images/vecteezy_electrical-engineering-man_9346439.jpg');
+            background-image: url('../images/images/hero.jpg');
             height: 300px;
             background-size: cover;
             background-position: center;
@@ -18,7 +18,12 @@
             overflow: hidden;
             display: flex;
             align-items: center;
+            transition: transform 0.4s ease;
+            cursor: pointer;
            }
+        .Hero-image:hover {
+            transform: scale(1.1);
+        }
       
 HEAD    
         .Hero-text {
@@ -54,7 +59,7 @@ HEAD
             text-decoration: underline;
         }
         nav {
-            background-color: #333;
+            background-color: #1613b4;
             padding: 10px 0;
             margin-bottom: 20px;
         }
@@ -66,7 +71,7 @@ HEAD
             margin-bottom: 20px;
         }
                .ticker-wrap {
-            background-color: #222;
+            background-color: #1613b4;
             color: white;
             padding: 10px;
             overflow: hidden;
@@ -75,30 +80,23 @@ HEAD
             align-items: center;
         }  
         .review-ticker {
-            display: flex;
-            overflow: hidden;
+            display: inline-block;
             white-space: nowrap;
             box-sizing: border-box;
             width: 100%;
-            background-color: #333;
+            background-color: #1613b4;
             color: white;
             padding: 10px 0;
+            animation: ticker 25s linear infinite;
         }
-
-        .ticker {
-            display: inline-block;
-            white-space: nowrap;
-            padding-left: 100%;
-            animation: ticker 20s linear infinite;
-        }
-        .ticker span {
+        .review-ticker span {
             display: inline-block;
             padding: 0 2em;
             font-size: 16px;
         }
           @keyframes ticker {
             from {
-                transform: translateX(0);
+                transform: translateX(100%);
             }
             to {
                 transform: translateX(-100%);
