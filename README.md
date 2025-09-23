@@ -115,6 +115,8 @@ Week 7: Official Launch
 <img width="1906" height="991" alt="image" src="https://github.com/user-attachments/assets/48847cc0-7a3a-4fef-924e-85af6a76a8d6" />
 <img width="1366" height="720" alt="image" src="https://github.com/user-attachments/assets/7ca7dcc3-05f5-4d22-adb8-57789e0116fb" />
 <img width="1366" height="679" alt="image" src="https://github.com/user-attachments/assets/8139f4b5-97c8-4996-a2d9-5e224992f897" />
+<img width="1347" height="679" alt="image" src="https://github.com/user-attachments/assets/64d07d91-b5c6-419a-89b3-20f32591f7dc" />
+
 
 
 
