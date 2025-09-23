@@ -156,6 +156,14 @@ Available at:
 
 [Accessed 23 August 2025] 
 
+Team members 
+
+Availble at: 
+
+<https://www.buildforce.com/resource/how-to-train-and-onboard-new-electricians-to-your-team >
+
+[Accessed 23 September 2025]
+
 
 
 
