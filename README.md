@@ -117,13 +117,28 @@ Week 7: Official Launch
 <img width="1366" height="679" alt="image" src="https://github.com/user-attachments/assets/8139f4b5-97c8-4996-a2d9-5e224992f897" />
 <img width="1347" height="679" alt="image" src="https://github.com/user-attachments/assets/64d07d91-b5c6-419a-89b3-20f32591f7dc" />
 
+# Breakpoints: 
+Mobile breakpoint:
 
+<img width="324" height="569" alt="image" src="https://github.com/user-attachments/assets/e338d606-f113-4c86-b674-bdecc4f36e95" />
+<img width="340" height="567" alt="image" src="https://github.com/user-attachments/assets/05b2af7b-2c2e-4c6b-8a4e-995c69b5c92b" />
+<img width="322" height="569" alt="image" src="https://github.com/user-attachments/assets/fe6b04e4-a5d0-44e9-bbd2-e6c506b607cf" />
+<img width="323" height="555" alt="image" src="https://github.com/user-attachments/assets/96bed89f-b4b0-454d-812a-3871131a3db1" />
+<img width="341" height="552" alt="image" src="https://github.com/user-attachments/assets/6c4e273a-53b1-481e-a182-ae2aec08d1d1" />
 
+Tablet Breakpoint:
 
+<img width="752" height="548" alt="image" src="https://github.com/user-attachments/assets/b27f211c-29a8-4b26-aa6c-4cf76aa48a0c" />
+<img width="779" height="557" alt="image" src="https://github.com/user-attachments/assets/5a8e9d82-565f-41e2-be69-df7fbf8377ec" />
+<img width="771" height="546" alt="image" src="https://github.com/user-attachments/assets/04d8db5f-ff1c-42ae-8ef7-60e983b50288" />
+<img width="770" height="554" alt="image" src="https://github.com/user-attachments/assets/efad506b-d0ad-48fa-9a5c-9f1fcde59f54" />
 
+Desktop:
 
-
-
+<img width="757" height="549" alt="image" src="https://github.com/user-attachments/assets/e63634f0-3798-4f81-939c-42f825e2dabb" />
+<img width="774" height="548" alt="image" src="https://github.com/user-attachments/assets/07bc1ee8-cce4-461f-8a4c-7d84af52af03" />
+<img width="764" height="548" alt="image" src="https://github.com/user-attachments/assets/62cffc85-65ae-4924-b929-60afa48c8660" />
+<img width="766" height="554" alt="image" src="https://github.com/user-attachments/assets/045a2f2c-d060-4ee9-8aa4-09a120651cf9" />
 
 
  # Reference:  
