@@ -37,13 +37,42 @@
     }
 }
 
-/* Hompage css styles */
-        body {
+/* General styles */
+p{
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+ header h1 {
+            text-align: center;
+        }
+
+      body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: #f4f4f4;
         }
+          header {
+            background-color: #1613b4;
+            color: white;
+            padding: 10px 0;
+        }
+
+        footer{
+            color :black;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+
+/* Hompage css styles */
      
         .Hero-image {
             background-image: url('../images/images/hero.jpg');
@@ -73,14 +102,6 @@ HEAD
             transform: translate(-50%, -50%);
             color: white;
         }
-
-                  body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-     
              nav ul {
             list-style: none;
             padding: 0;
@@ -143,36 +164,13 @@ HEAD
         } 
 
         /* About css styles */
-                    body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #1613b4;
-            color: white;
-            padding: 10px 0;
-        }
-        header h1 {
+
+        picture {
             text-align: center;
+            margin: 20px 0;
         }
 
         /* Services css styles */
-            body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #1613b4;
-            color: white;
-            padding: 10px 0;
-        }
-        header h1 {
-            text-align: center;
-        } 
             #message {
             display: none;
             width: 100%;
@@ -203,15 +201,6 @@ HEAD
         }
 
         /* enquiry.css */
-           body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header h1 {
-            text-align: center;
-        }
         #message {
             display: none;
             width: 100%;
@@ -230,20 +219,6 @@ HEAD
         }
 
         /* contact.css */
-       body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #1613b4;
-            color: white;
-            padding: 10px 0;
-        }
-        header h1 {
-            text-align: center;
-        }
         map{
             text-align: center;
             margin: 20px 0;
