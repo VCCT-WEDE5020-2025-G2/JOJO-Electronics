@@ -124,6 +124,8 @@ Changed the hero text colour to be black
 Added a second services request options for the customer to be able to chose more than one services. 
 
 <img width="1366" height="679" alt="image" src="https://github.com/user-attachments/assets/d82f4208-c959-44ac-8a38-1b7a4d807d67" />
+<img width="1366" height="720" alt="image" src="https://github.com/user-attachments/assets/447ae972-6bc1-42ec-b2a1-35d4f937b1a9" />
+
 
 
 
