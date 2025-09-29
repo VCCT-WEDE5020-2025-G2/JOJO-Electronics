@@ -98,6 +98,7 @@ h3 {
     top: 10px;
     left: 10px;
 }
+
         .Hero-image {
             background-image: url('../images/images/hero.jpg');
             height: 300px;
@@ -124,7 +125,10 @@ HEAD
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: white;
+            color:blue;
+        }
+        .Hero-text h1 {
+            color: black;
         }
              nav ul {
             list-style: none;
