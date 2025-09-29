@@ -9,6 +9,11 @@
     .Hero-text p {
         font-size: 14px;
     }
+    .container{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
 }
 
 /*Breakpoint for tablets */
@@ -22,12 +27,17 @@
     .Hero-text p {
         font-size: 16px;
     }
+    .container{
+    flex-direction:row ;
+}
 }
 
 /* Breakpoint for desktops */
+
 @media (min-width: 1025px) {
     .Hero-image {
         height: 300px;
+
     }
     .Hero-text h1 {
         font-size: 32px;
@@ -35,6 +45,9 @@
     .Hero-text p {
         font-size: 18px;
     }
+    .container{
+    flex-direction:row ;
+}
 }
 
 /* General styles */
@@ -48,6 +61,12 @@ h2 {
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 24px;
+}
+h3 {
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-size: 20px;
 }
  header h1 {
             text-align: center;
@@ -74,6 +93,11 @@ h2 {
 
 /* Hompage css styles */
      
+.logo {
+    background-color: #1613b4;
+    top: 10px;
+    left: 10px;
+}
         .Hero-image {
             background-image: url('../images/images/hero.jpg');
             height: 300px;
