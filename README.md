@@ -117,6 +117,16 @@ Week 7: Official Launch
 <img width="1366" height="679" alt="image" src="https://github.com/user-attachments/assets/8139f4b5-97c8-4996-a2d9-5e224992f897" />
 <img width="1347" height="679" alt="image" src="https://github.com/user-attachments/assets/64d07d91-b5c6-419a-89b3-20f32591f7dc" />
 
+Changed the hero text colour to be black 
+
+<img width="1366" height="682" alt="image" src="https://github.com/user-attachments/assets/290731af-74c4-403b-a6bd-9e9ead5c5427" />
+
+Added a second services request options for the customer to be able to chose more than one services. 
+
+<img width="1366" height="679" alt="image" src="https://github.com/user-attachments/assets/d82f4208-c959-44ac-8a38-1b7a4d807d67" />
+
+
+
 # Breakpoints: 
 Mobile breakpoint:
 
