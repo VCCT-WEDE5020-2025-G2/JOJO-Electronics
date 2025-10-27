@@ -1,0 +1,18 @@
+footer,h2,h3{color:#000}footer,header,nav{padding:10px 0}.Hero-image,nav{margin-bottom:20px}
+.Hero-image,.ticker-wrap{overflow:hidden;display:flex}HEAD 
+.Hero-text,footer,header h1,map,nav ul,picture{text-align:center}@media (max-width:600px){.Hero-image{height:200px}
+.Hero-text h1{font-size:24px}.Hero-text p{font-size:14px}.container{display:flex;flex-direction:column;gap:1rem}}@media (min-width:601px) and (max-width:1024px){.Hero-image{height:250px}
+.Hero-text h1{font-size:28px}.Hero-text p{font-size:16px}.container{flex-direction:row}}@media (min-width:1025px){.Hero-image{height:300px}
+.Hero-text h1{font-size:32px}.Hero-text p{font-size:18px}.container{flex-direction:row}}p{line-height:1.5;margin-bottom:15px}
+h2{margin-top:20px;margin-bottom:10px;font-size:24px}h3{margin-top:15px;margin-bottom:8px;font-size:20px}
+body{font-family:Arial,sans-serif;margin:0;padding:20px;background-color:#f4f4f4}.logo,.review-ticker,
+.ticker-wrap,header,nav{background-color:#1613b4}header{color:#fff}.logo{top:10px;left:10px}
+.Hero-image{background-image:url('../images/images/hero.jpg');border-radius:8px;box-shadow:0 4px 8px rgba(0,0,0,.1);align-items:center;transition:transform .4s;cursor:pointer;height:300px;background-size:cover;background-position:center;position:relative}
+.Hero-image:hover{transform:scale(1.1)}HEAD .Hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#00f}
+.Hero-text h1{color:#000}nav ul{list-style:none;padding:0}nav ul li{display:inline;margin:0 15px}
+nav ul li a{color:#fff;text-decoration:none}nav ul li a:hover{text-decoration:underline}
+.ticker-wrap{color:#fff;padding:10px;height:40px;align-items:center}.review-ticker{display:inline-block;white-space:nowrap;box-sizing:border-box;width:100%;color:#fff;padding:10px 0;animation:25s linear infinite ticker}
+.review-ticker span{display:inline-block;padding:0 2em;font-size:16px}@keyframes ticker{from{transform:translateX(100%)}to{transform:translateX(-100%)}}map,picture{margin:20px 0}
+button :hover,button:hover{background-color:#555;color:#fff}#message,#message2{display:none;width:100%;height:100px}select{width:100%;padding:10px;font-size:16px;border-radius:4px}
+button{background-color:gray;color:#fff;padding:10px 15px;border:none;cursor:pointer}
+map iframe{width:100%;height:450px;border:0;border-radius:8px}
