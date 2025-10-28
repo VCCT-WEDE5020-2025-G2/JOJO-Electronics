@@ -12,7 +12,7 @@ message.textContent="";
 if (!name || !email || !number || !service) {
     alert("Please fill in all required fields.");
     event.preventDefault();
-} else if (!email.includes("@") || email.includes(".")) {
+} else if (!email.includes("@") || !email.includes(".")) {
     alert("Please enter a valid email address.");
     event.preventDefault();
 } else if (isNaN(number) || number.length < 10) {
