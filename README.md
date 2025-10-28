@@ -128,9 +128,6 @@ Added a second services request options for the customer to be able to chose mor
 <img width="1366" height="720" alt="image" src="https://github.com/user-attachments/assets/1de86303-f077-4a17-ad39-f540ca58698e" />
 
 
-
-
-
 # Breakpoints: 
 Mobile breakpoint:
 
@@ -153,6 +150,13 @@ Desktop:
 <img width="774" height="548" alt="image" src="https://github.com/user-attachments/assets/07bc1ee8-cce4-461f-8a4c-7d84af52af03" />
 <img width="764" height="548" alt="image" src="https://github.com/user-attachments/assets/62cffc85-65ae-4924-b929-60afa48c8660" />
 <img width="766" height="554" alt="image" src="https://github.com/user-attachments/assets/045a2f2c-d060-4ee9-8aa4-09a120651cf9" />
+
+# Part 3 Changelog:
+
+<img width="1325" height="571" alt="image" src="https://github.com/user-attachments/assets/93a70191-e9d0-4580-9016-6381a3e901c1" />
+
+Added a navigation menu to all the pages of the website. 
+
 
 
  # Reference:  
