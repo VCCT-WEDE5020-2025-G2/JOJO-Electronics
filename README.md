@@ -167,6 +167,16 @@ The user can select how they want to send their service request.
 
 A message is displayed when the user has submitted their request. 
 
+<img width="1330" height="504" alt="image" src="https://github.com/user-attachments/assets/110e5f64-db93-4f37-b1fa-78c8a712fc91" />
+
+Added a contact-form that must be filled out in the contact page.
+
+<img width="1364" height="397" alt="image" src="https://github.com/user-attachments/assets/88da6f2d-6254-4090-b573-e4e533d45703" />
+<img width="1330" height="407" alt="image" src="https://github.com/user-attachments/assets/22217a67-158e-4124-9ef4-fe36093aedb9" />
+
+
+
+
 
 
 
