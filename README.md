@@ -157,6 +157,32 @@ Desktop:
 
 Added a navigation menu to all the pages of the website. 
 
+Sevice-form and validation and submittion: 
+
+<img width="1315" height="512" alt="image" src="https://github.com/user-attachments/assets/25d8b3ae-39d6-4d44-ab16-90fa5e756b41" />
+
+The user can select how they want to send their service request. 
+
+<img width="1306" height="412" alt="image" src="https://github.com/user-attachments/assets/71749958-09a9-4d2e-9ff9-dffe25c481b8" />
+
+A message is displayed when the user has submitted their request. 
+
+<img width="1330" height="504" alt="image" src="https://github.com/user-attachments/assets/110e5f64-db93-4f37-b1fa-78c8a712fc91" />
+
+Added a contact-form that must be filled out in the contact page.
+
+<img width="1364" height="397" alt="image" src="https://github.com/user-attachments/assets/88da6f2d-6254-4090-b573-e4e533d45703" />
+<img width="1330" height="407" alt="image" src="https://github.com/user-attachments/assets/22217a67-158e-4124-9ef4-fe36093aedb9" />
+
+
+
+
+
+
+
+
+
+
 
 
  # Reference:  
