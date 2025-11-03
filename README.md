@@ -157,6 +157,22 @@ Desktop:
 
 Added a navigation menu to all the pages of the website. 
 
+Sevice-form and validation and submittion: 
+
+<img width="1315" height="512" alt="image" src="https://github.com/user-attachments/assets/25d8b3ae-39d6-4d44-ab16-90fa5e756b41" />
+
+The user can select how they want to send their service request. 
+
+<img width="1306" height="412" alt="image" src="https://github.com/user-attachments/assets/71749958-09a9-4d2e-9ff9-dffe25c481b8" />
+
+A message is displayed when the user has submitted their request. 
+
+
+
+
+
+
+
 
 
  # Reference:  
