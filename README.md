@@ -174,9 +174,14 @@ Added a contact-form that must be filled out in the contact page.
 <img width="1364" height="397" alt="image" src="https://github.com/user-attachments/assets/88da6f2d-6254-4090-b573-e4e533d45703" />
 <img width="1330" height="407" alt="image" src="https://github.com/user-attachments/assets/22217a67-158e-4124-9ef4-fe36093aedb9" />
 
+<img width="803" height="380" alt="image" src="https://github.com/user-attachments/assets/3e2e4d49-3efd-4f08-9f0a-4a3087f06541" />
+<img width="835" height="443" alt="image" src="https://github.com/user-attachments/assets/89bc1b2e-4f11-450e-bf22-0211cb638fb7" />
+<img width="827" height="446" alt="image" src="https://github.com/user-attachments/assets/4c22e0e6-f44f-4165-8608-1cb4ee83e167" />
+<img width="840" height="448" alt="image" src="https://github.com/user-attachments/assets/0990980d-5d4d-4176-9a74-b3a5c23cca56" />
 
+This is the code for both the contact-form, serivce-form and enquiry-form which validates and submits the inputs of the forms. 
 
-
+<img width="1061" height="488" alt="image" src="https://github.com/user-attachments/assets/40982e6e-bef4-4017-a88e-6cc5010a2825" />
 
 
 
