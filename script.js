@@ -28,9 +28,9 @@ if (!name || !email || !number || !service) {
 // if validation fails, prevent form submission but if it passes, allow submission
         const formData = new FormData(form);
 
-        fetch("submit_form.php", {
-            method: "POST",
-            body: formData
+        fetch(form.action, {
+            method: form.method,
+            body: formData,
         })
         .then(response => response.text())
         .then(data => {
@@ -98,5 +98,66 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         return;
     }
 });
+
+// Contact form email composition and sending
+
+(function() {
+    const RECIPIENT_EMAIL = "JOJOElectronics@gmail.com";
+
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("formMessage");
+
+    function enc(s) {
+        return encodeURIComponent(s);
+    }
+
+    function composeMailto(to , subject, body) {
+        return `mailto:${enc(to)}?subject=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    function composeGmail(to, subject, body) {
+        return `https://mail.google.com/mail/?view=cm&fs=1&to=${enc(to)}&su=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    function composeOutlook(to, subject, body) {
+        return `https://outlook.live.com/owa/?path=/mail/action/compose&to=${enc(to)}&subject=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const name = document.getElementById("contactName").value.trim();
+        const email = document.getElementById("contactEmail").value.trim();
+        const message = document.getElementById("contactMessage").value.trim();
+        const sendMethod = document.querySelector('input[name="sendMethod"]:checked').value;
+
+    const subject = 'Website Contact Form Submission ${name || "No Name"}';
+    const body =[
+        'Hello,',
+        '',
+        'You have received a new message from your website contact form.',
+        message,'',
+        '',
+        'Sender:${name}',
+        'Email:${email}',
+        'Sent from JOJO Electronics website contact form.'
+    ].join('\n');
+    
+    let url = '';
+    if (sendMethod === 'gmail') {
+        url = composeGmail(RECIPIENT_EMAIL, subject, body);
+        window.open(url, '_blank','noreferrer');
+    } else if (sendMethod === 'outlook') {
+        url = composeOutlook(RECIPIENT_EMAIL, subject, body);
+        window.open(url, '_blank','noreferrer');
+    } else {
+        url = composeMailto(RECIPIENT_EMAIL, subject, body);
+        window.location .href = url;
+    }
+
+    status.style.color = "green";
+    status.textContent = "Preparing your email client...";
+    form.reset();
+    });
+})();
 
 

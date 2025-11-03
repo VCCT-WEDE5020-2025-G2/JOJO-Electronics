@@ -32,14 +32,17 @@
 
                 <label for ="enquiry">Enquiry:</label>
                 <textarea id="enquiry" name="enquiry" rows="2" cols="30" required></textarea><br><br>
+
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    <input type="radio" id="contactEmail" name="sendMethod" value="malito" checked>Email</label><br>
+                    <input type="radio" id="contactEmail" name="sendMethod" value="Gmail">SMS</label><br>
+                    <input type="radio" id="contactEmail" name="sendMethod" value="Outlook">WhatsApp</label><br>
+                    <input type="radio" id="contactPhone" name="Method" value="Phone">Phone</label><br>
+                </fieldset>
                 
                 <button onclick="showMessage()">Submit</button>
                 <p id="message">Thank you for your enquiry. We will get back to you as soon as possible.</p>
-                <script>
-                    function showMessage() {
-                        document.getElementById("message").style.display = "block";
-                    }
-                </script>
             </form>
             </div>
         </section>
