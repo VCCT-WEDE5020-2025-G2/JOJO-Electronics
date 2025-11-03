@@ -30,6 +30,25 @@ if (lightbox && lightboxImg && captionText && closebtn) {
 }
 }
 
+// Search functionality
+const searchInput = document.getElementById('searchInput');
+const productList = document.getElementById('productList');
+const products = productList.getElementsByTagName('li');
+
+searchInput.addEventListener('input', function() {
+    const filter = searchInput.value.toLowerCase();
+
+    for (let i = 0; i < products.length; i++) {
+        const item = products[i].textContent.toLowerCase();
+        if (item.includes(filter)) {
+            products[i].classList.remove('hide');
+        } else {
+            products[i].classList.add('hide');
+        }
+    }
+});
+
+
 
 
 
