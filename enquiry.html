@@ -26,20 +26,21 @@
         <section class="enquiry-form">
             <h2></h2>
             <div>
-            <form id="enquiryForm" method="POST" action="submit_.php">
+            <form id="enquiryForm" >
                 <label for ="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
 
                 <label for ="enquiry">Enquiry:</label>
                 <textarea id="enquiry" name="enquiry" rows="2" cols="30" required></textarea><br><br>
 
-                <fieldset>
-                    <legend>Preferred Contact Method:</legend>
-                    <input type="radio" id="contactEmail" name="sendMethod" value="malito" checked>Email</label><br>
-                    <input type="radio" id="contactEmail" name="sendMethod" value="Gmail">SMS</label><br>
-                    <input type="radio" id="contactEmail" name="sendMethod" value="Outlook">WhatsApp</label><br>
-                    <input type="radio" id="contactPhone" name="Method" value="Phone">Phone</label><br>
-                </fieldset>
+           <label for ="Additional-info">Additional details:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe your request"></textarea><br></br>
+
+            <p>Select email method:
+                <label><input type="radio" name="sendMethod" value="mailto" checked>Email</label>   
+                <label><input type="radio" name="sendMethod" value="gmail">Gmail</label>   
+                <label><input type="radio" name="sendMethod" value="outlook">Outlook</label>
+            </p>
                 
                 <button onclick="showMessage()">Submit</button>
                 <p id="message">Thank you for your enquiry. We will get back to you as soon as possible.</p>
@@ -51,7 +52,6 @@
     <footer>
         <p>&copy; 2024 JOJO Electronics. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
    
 </body>
 </html>

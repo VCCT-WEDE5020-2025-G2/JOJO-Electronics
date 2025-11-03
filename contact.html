@@ -41,7 +41,8 @@
     <p>Public holidays: 9:00 AM - 13:00 PM</p>
     </section>
 
-    <form class="contact-form" method="POST" action="submit_form.php">
+    <section class="contact-form">
+    <form id ="contact-form"  >
         <h3>Contact Us</h3>
         <p>If you have any questions or need further information, please fill out the form below and we will get back to you as soon as possible.</p>
         <label for="name">Name:</label>
@@ -50,12 +51,95 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br></br>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="2" cols="30" required></textarea><br></br>
-        
+                <label for ="Message">Message:</label>
+                <textarea id="message" name="message" rows="2" cols="30" required></textarea><br><br>
+
+            <p>Select email method:
+                <label><input type="radio" name="sendMethod" value="mailto" checked>Email</label>   
+                <label><input type="radio" name="sendMethod" value="gmail">Gmail</label>   
+                <label><input type="radio" name="sendMethod" value="outlook">Outlook</label>
+            </p>
+
         <button type="submit">Send message</button>
         <p id="formMessage"></p>
     </form>
+    </section>
+
+    <script>
+        
+// Contact form email composition and sending
+
+(function() {
+    const RECIPIENT_EMAIL = "JOJOElectronics@gmail.com";
+
+    const form = document.getElementById("contact-form");
+    const status = document.getElementById("formMessage");
+
+    function enc(s) {
+        return encodeURIComponent(s);
+    }
+
+    function composeMailto(to , subject, body) {
+        return `mailto:${enc(to)}?subject=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    function composeGmail(to, subject, body) {
+        return `https://mail.google.com/mail/?view=cm&fs=1&to=${enc(to)}&su=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    function composeOutlook(to, subject, body) {
+        return `https://outlook.live.com/owa/?path=/mail/action/compose&to=${enc(to)}&subject=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+       
+       // Form validation script
+
+const name = form.name.value.trim();
+const email = form.email.value.trim();
+const message = form.message.value.trim();
+
+
+// Basic validation
+if (!name || !email || !message) {
+    alert("Please fill in all required fields.");
+    return;
+}
+
+    const sendMethod = (form.querySelector('input[name="sendMethod"]:checked') || {}).value || "mailto";
+    const subject = 'JOJO Electronics Contact Form Submission';
+
+    const body =[
+        'Hello,',
+        '',
+        'You have received a new message from your website contact form.',
+        message,'',
+        '',
+        'Name:${name}',
+        'Email:${email}',
+        'Sent from JOJO Electronics website contact form.'
+    ].join('\n');
+    
+    let url = '';
+    if (sendMethod === 'gmail') {
+        url = composeGmail(RECIPIENT_EMAIL, subject, body);
+        window.open(url, '_blank','noreferrer');
+    } else if (sendMethod === 'outlook') {
+        url = composeOutlook(RECIPIENT_EMAIL, subject, body);
+        window.open(url, '_blank','noreferrer');
+    } else {
+        url = composeMailto(RECIPIENT_EMAIL, subject, body);
+        window.location .href = url;
+    }
+
+    status.style.color = "green";
+    status.textContent = "Thank you for contacting us! We will get back to you soon.";
+
+    form.reset();
+    });
+})();
+    </script>
 <!--This section is a contact form for users to contact the business directly-->
 
 <div class="map">
@@ -74,7 +158,6 @@
     <footer>
         <p>&copy; 2024 JOJO Electronics. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
 
 </body>
 </html>

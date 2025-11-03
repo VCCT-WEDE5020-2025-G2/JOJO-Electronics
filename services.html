@@ -57,7 +57,7 @@
             Note: The total cost of the service will be calculated and sent to your email after submission.<br></br>
             Note: You get a service discount for every discount requested.</p>
 
-        <form id="serviceForm " method="POST" action="submit_form.php">
+        <form id="serviceForm" >
             <label for ="name">Name:</label>
             <input type="text" id="name" name="name" required><br></br>
             <label for ="email">Email:</label>
@@ -80,8 +80,8 @@
                 <option>Electrical panel upgrades | R950 </option>
                 <option>Emergency power systems | R950 </option>
             </select>
-            <label for ="service">Service Two:</label>
-                  <select id="service" name="service" required>
+            <label for ="service2">Service Two:</label>
+                  <select id="service2" name="service2" required>
                 <option>Electrical wiring and rewiring | R950</option>
                 <option>Installation and maintenance of electrical systems in offices, shops and buildings | R950 </option>
                 <option>Security systems wiring | R950 </option>
@@ -95,19 +95,114 @@
                 <option>Electrical panel upgrades | R950</option>
                 <option>Emergency power systems | R950 </option>
             </select>
-            <button type="total">Total</button>
+
+            <label for ="Additional-info">Additional details:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Describe your request"></textarea><br></br>
+
+            <p>Select email method:
+                <label><input type="radio" name="sendMethod" value="mailto" checked>Email</label>   
+                <label><input type="radio" name="sendMethod" value="gmail">Gmail</label>   
+                <label><input type="radio" name="sendMethod" value="outlook">Outlook</label>
+            </p>
+
         <button type="submit">Submit</button>
-        </form>
-    <p id="formMessage"></p>
-           
+          <p id="formMessage"></p>    
+        </form>   
     </section>
+    <script> 
+         (function() {
+    const RECIPIENT_EMAIL = "JOJOElectronics@gmail.com";
+
+    const form = document.getElementById("serviceForm");
+    const status = document.getElementById("formMessage");
+
+    function enc(s) {
+        return encodeURIComponent(s);
+    }
+
+    function composeMailto(to , subject, body) {
+        return `mailto:${enc(to)}?subject=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    function composeGmail(to, subject, body) {
+        return `https://mail.google.com/mail/?view=cm&fs=1&to=${enc(to)}&su=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    function composeOutlook(to, subject, body) {
+        return `https://outlook.live.com/owa/?path=/mail/action/compose&to=${enc(to)}&subject=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+             // Form validation script
+
+
+const name = form.name.value.trim();
+const email = form.email.value.trim();
+const number = form .number.value.trim();
+const service = form.service.value.trim();
+const service2 = form.service2.value.trim();
+const message = form.message.value.trim();
+
+status.textContent = "";
+status.style.fontWeight = "bold";
+
+// Basic validation
+if (!name || !email || !number || !service) {
+    alert("Please fill in all required fields.");
+    event.preventDefault();
+} else if (!email.includes("@") || !email.includes(".")) {
+    alert("Please enter a valid email address.");
+    event.preventDefault();
+} else if (isNaN(number) || number.length < 10) {
+    alert("Please enter a valid contact number.");
+    return;
+}
+ 
+const sendMethod = (form.querySelector('input[name="sendMethod"]:checked') || {}).value || "mailto";
+    const subject = 'JOJO Electronics Contact Form Submission';
+
+    const body =[
+        'Hello,',
+        '',
+        'You have received a new message from your website contact form.',
+        message,'',
+        '',
+        'Name:${name}',
+        'Email:${email}',
+        'Phone:${phone}',
+        'Service Required:${service}',
+        'Service Two:${service2}',
+        'Sent from JOJO Electronics website contact form.'
+    ].join('\n');
+    
+    let url = "";
+    if (sendMethod === "gmail") {
+        url = composeGmail(RECIPIENT_EMAIL, subject, body);
+        window.open(url, '_blank','noreferrer');
+    } else if (sendMethod === 'outlook') {
+        url = composeOutlook(RECIPIENT_EMAIL, subject, body);
+        window.open(url, '_blank','noreferrer');
+    } else {
+        url = composeMailto(RECIPIENT_EMAIL, subject, body);
+        window.location .href = url;
+    }
+
+    status.style.color = "green";
+    status.textContent = "Thank you, we have received your request! We will get back to you soon.";
+
+    form.reset();
+    });
+})();
+    </script>
+
+
     <!--This form will allow for all custormers to request a service-->
     <!--This part of the script will make sure that the person has filled all the needed information before submitting or wanting to calculate the total-->
 
     <footer>
         <p>&copy; 2024 JOJO Electronics. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
     
    
    
