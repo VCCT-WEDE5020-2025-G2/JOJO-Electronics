@@ -56,27 +56,21 @@ Emergency services clients - that need fast response for their electrical issues
         <img src="images/vecteezy_men-working-on-electrical-pole_13331731.jpg" 
         loading="lazy"
         class="gallery-img"
-        alt="Men-working-on-electrical-pole"
-         width="1000"
-          height="500">
+        alt="Men-working-on-electrical-pole">
             <figcaption>JOJO Electronics team working on an electrical pole</figcaption>
         </figure>
         <figure>
         <img src="images/vecteezy_high-voltage-electric-pole-and-transmission-lines-in-the_7763879.jpg"
         loading="lazy"
         class="gallery-img"
-        alt="Transmission-lines"
-         width="1000"
-          height="500">
+        alt="Transmission-lines">
             <figcaption>Transmission-lines serviced by JOJO Electronics</figcaption>
         </figure>
         <figure>
         <img src="images/vecteezy_electrician-working-in-the-room-maintenance-technicians_19050484.jpg"
         loading="lazy"
         class="gallery-img"
-        alt="Electrician-working-in-the-room"
-         width="1000"
-          height="500">
+        alt="Electrician-working-in-the-room">
             <figcaption>Electrician working on the switches in a commerial property</figcaption>
         </figure>
     </div>
@@ -87,39 +81,13 @@ Emergency services clients - that need fast response for their electrical issues
             <div id="caption"></div>
         </div>
 
-        <script>
-            
-// Lightbox functionality
+<script src="script.js"></script>
 
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const captionText = document.getElementById("caption");
-const closebtn = document.getElementsByClassName("close")[0];
+   <div id="Social-Media">
+        <h3>Follow us on Social Media</h3>
+       <a href="http://127.0.0.1:5500/hompage.html">Instagram</a>
+    </div>
 
-if (lightbox && lightboxImg && captionText && closebtn) {
-    document.querySelectorAll(".gallery-img").forEach(img => {
-        img.addEventListener("click", function() {
-            lightbox.style.display = "block";
-            lightboxImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        });
-    });
-
-    closebtn.addEventListener("click",() => {
-        lightbox.style.display = "none";
-    });
-
-    window.addEventListener("click", (event) => {
-        if (event.target === lightbox) {
-            lightbox.style.display = "none";
-        }
-    });
-
-    function closeLightbox() {
-        lightbox.style.display = "none";
-}
-}
-        </script>
     <footer>
         <p>&copy; 2024 JOJO Electronics. All rights reserved.</p>
     </footer>

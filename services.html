@@ -96,8 +96,6 @@
                 <option>Emergency power systems | R950 </option>
             </select>
 
-            <label for ="Additional-info">Additional details:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Describe your request"></textarea><br></br>
 
             <p>Select email method:
                 <label><input type="radio" name="sendMethod" value="mailto" checked>Email</label>   
@@ -142,7 +140,6 @@ const email = form.email.value.trim();
 const number = form .number.value.trim();
 const service = form.service.value.trim();
 const service2 = form.service2.value.trim();
-const message = form.message.value.trim();
 
 status.textContent = "";
 status.style.fontWeight = "bold";
@@ -166,7 +163,8 @@ const sendMethod = (form.querySelector('input[name="sendMethod"]:checked') || {}
         'Hello,',
         '',
         'You have received a new message from your website contact form.',
-        message,'',
+       ' Service one:', service,'',
+       ' Service two: ', service2,'',
         '',
         'Name:${name}',
         'Email:${email}',
@@ -195,6 +193,8 @@ const sendMethod = (form.querySelector('input[name="sendMethod"]:checked') || {}
     });
 })();
     </script>
+
+ 
 
 
     <!--This form will allow for all custormers to request a service-->

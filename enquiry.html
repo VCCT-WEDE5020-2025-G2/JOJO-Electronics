@@ -23,7 +23,7 @@
             </ul>
         </nav>
     </header>
-        <section class="enquiry-form">
+        <section class="enquiryform">
             <h2></h2>
             <div>
             <form id="enquiryForm" >
@@ -33,20 +33,90 @@
                 <label for ="enquiry">Enquiry:</label>
                 <textarea id="enquiry" name="enquiry" rows="2" cols="30" required></textarea><br><br>
 
-           <label for ="Additional-info">Additional details:</label>
-            <textarea id="message" name="message" rows="4" placeholder="Describe your request"></textarea><br></br>
-
             <p>Select email method:
                 <label><input type="radio" name="sendMethod" value="mailto" checked>Email</label>   
                 <label><input type="radio" name="sendMethod" value="gmail">Gmail</label>   
                 <label><input type="radio" name="sendMethod" value="outlook">Outlook</label>
             </p>
-                
-                <button onclick="showMessage()">Submit</button>
-                <p id="message">Thank you for your enquiry. We will get back to you as soon as possible.</p>
+                <button type="submit">Submit</button>
+                <p id ="formMessage"></p>
             </form>
             </div>
         </section>
+         <script>
+        
+    // Enquiry form submission script
+
+(function() {
+    const RECIPIENT_EMAIL = "JOJOElectronics@gmail.com";
+
+    const form = document.getElementById("enquiryForm");
+    const status = document.getElementById("formMessage");
+
+    function enc(s) {
+        return encodeURIComponent(s);
+    }
+
+    function composeMailto(to , subject, body) {
+        return `mailto:${enc(to)}?subject=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    function composeGmail(to, subject, body) {
+        return `https://mail.google.com/mail/?view=cm&fs=1&to=${enc(to)}&su=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    function composeOutlook(to, subject, body) {
+        return `https://outlook.live.com/owa/?path=/mail/action/compose&to=${enc(to)}&subject=${enc(subject)}&body=${enc(body)}`;
+    }
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+       
+       // Form validation script
+
+const enquiry= form.enquiry.value.trim();
+const email = form.email.value.trim();
+
+
+// Basic validation
+if (!email || !enquiry) {
+    alert("Please fill in all required fields.");
+    return;
+}
+
+    const sendMethod = (form.querySelector('input[name="sendMethod"]:checked') || {}).value || "mailto";
+    const subject = 'JOJO Electronics Contact Form Submission';
+
+    const body =[
+        'Hello,',
+        '',
+        'You have received a new message from your website contact form.',
+        enquiry,'',
+        '',
+        'Email:${email}',
+        'Enquiry:${enquiry}',
+        'Sent from JOJO Electronics website contact form.'
+    ].join('\n');
+    
+    let url = '';
+    if (sendMethod === 'gmail') {
+        url = composeGmail(RECIPIENT_EMAIL, subject, body);
+        window.open(url, '_blank','noreferrer');
+    } else if (sendMethod === 'outlook') {
+        url = composeOutlook(RECIPIENT_EMAIL, subject, body);
+        window.open(url, '_blank','noreferrer');
+    } else {
+        url = composeMailto(RECIPIENT_EMAIL, subject, body);
+        window.location .href = url;
+    }
+
+    status.style.color = "green";
+    status.textContent = "Thank you for your enquiry! We will get back to you soon.";
+
+    form.reset();
+    });
+})();
+    </script>
         <!--This form will allow for all custormers to make an enquiry-->
      <br></br>
     <footer>
