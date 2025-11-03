@@ -181,14 +181,7 @@ Added a contact-form that must be filled out in the contact page.
 
 This is the code for both the contact-form, serivce-form and enquiry-form which validates and submits the inputs of the forms. 
 
-
-
-
-
-
-
-
-
+<img width="1061" height="488" alt="image" src="https://github.com/user-attachments/assets/40982e6e-bef4-4017-a88e-6cc5010a2825" />
 
 
 
